@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <div class="name">
+          <input
+            id="firstname"
+            type="text"
+            placeholder="Nama Depan"
+            name="firstname"
+          />
+          <input
+            id="lastname"
+            type="text"
+            placeholder="Nama Belakang"
+            name="lastname"
+          />
+        </div>
+        <select name="gender" id="gender">
+          <option value="pria">Pria</option>
+          <option value="wanita">Wanita</option>
+          <option selected disabled hidden value="none">Pilih gender</option>
+        </select>
+        <input id="address" type="text" placeholder="Alamat" />
+        <select name="storage" id="storage">
+          <option value="local-storage">Local Storage</option>
+          <option value="session-storage">Session Storage</option>
+          <option value="cookie">Cookie</option>
+        </select>
+        <div class="button-container">
+          <button id="isShowNew">Show or add new data</button>
+          <button id="isShowAll">Show All data</button>
+        </div>
+      </form>
+      <section class="data-container">
+        <div class="item">
+          <h1>local Storage</h1>
+          <div id="localData"></div>
+        </div>
+        <div class="item">
+          <h1>Session Storage</h1>
+          <div id="sessionData"></div>
+        </div>
+        <div class="item">
+          <h1>Cookie Storage</h1>
+          <div id="cookieData"></div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>
